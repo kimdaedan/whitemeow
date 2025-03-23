@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\meowcontroller;
 use App\Http\Controllers\ListbarangController;
+use App\Http\Controllers\WhiteController;
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -29,4 +30,6 @@ Route::get('/contact', [meowcontroller::class, 'contact']);
 //    return view('list_barang', compact('id', 'nama'));
 // });
 
-Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
+//Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
+
+Route::get('/listbarang/{id}/{nama}', [WhiteController::class, 'tampilkan']);
