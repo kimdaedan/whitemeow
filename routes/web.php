@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\meowcontroller;
 use App\Http\Controllers\ListbarangController;
-use App\Http\Controllers\WhiteController;
+use App\Http\Controllers\whiteController;
 
 Route::get('/welcome', function () {
     return view('welcome');
