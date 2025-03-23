@@ -31,5 +31,3 @@ Route::get('/contact', [meowcontroller::class, 'contact']);
 // });
 
 Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
-
-Route::get('/listbarang/{id}/{nama}', [WhiteController::class, 'tampilkan']);
