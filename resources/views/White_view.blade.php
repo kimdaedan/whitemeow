@@ -10,11 +10,11 @@
     </tbody>
         @foreach($data as $dataku)
             <tr>
-                <td>{{ $dataku->id }}</td>
-                <td>{{ $dataku->nama }}</td>
-                <td>{{ $dataku->harga }}</td>
+                <td>{{ $dataku['id']}}</td>
+                <td>{{ $dataku['nama']}}</td>
+                <td>{{ $dataku['harga']}}</td>
             </tr>
         @endforeach
-    </tbody>
+</tbody>
 </table>
 </html>

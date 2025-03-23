@@ -23,6 +23,6 @@ class WhiteController extends Controller
 
 public function tampilkan(){
     $data = $this->getData();
-    return view('list_barang', compact('data'));
+    return view('White_view', compact('data'));
     }
 }
