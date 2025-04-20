@@ -6,6 +6,7 @@ use App\Http\Controllers\ListBarangController;
 use App\Http\Controllers\WhiteController;
 use App\Http\Controllers\terdekatController;
 use App\Http\Controllers\loginFormController;
+use App\Http\Controllers\ProductController;
 
 
 Route::get('/welcome', function () {
@@ -56,3 +57,6 @@ Route::get('/event_view', function () {
 
 // untuk loginform
 Route::get('/loginform', [loginFormController::class, 'index']);
+
+
+Route::get('/list_product', [ProductController::class, 'index']);
