@@ -60,3 +60,8 @@ Route::get('/loginform', [loginFormController::class, 'index']);
 
 
 Route::get('/list_product', [ProductController::class, 'index']);
+
+// Atau dengan nama route:
+Route::get('/home', function () {
+    return view('pages.home');
+})->name('home');
